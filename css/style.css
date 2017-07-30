@@ -1,0 +1,101 @@
+/*font-family: 'Roboto', 'Open Sans', 'Roboto Condensed', sans-serif;*/
+
+@media screen and (max-width: 767px) {
+  .header__logo img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.bg-fullscreen {
+  background-image: url(../img/bg_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+.bg-fullscreen:after{
+  content: '';
+  display: block;
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  background: red;
+  /*background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 70%, rgba(0,0,0,0.65) 100%);*/
+  /*background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 70%,rgba(0,0,0,0.65) 100%);*/
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+}
+.header__container {
+  width: 66%;
+  margin: 0 auto;
+}
+.header__logo {
+  padding-top: 10%;
+  padding-top: 10vh;
+  text-align: center;
+  /*position: absolute;*/
+  /*top: 30%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+}
+.header__logo img {
+  box-shadow: 0px 0px 15px #000;
+}
+
+.header__title {
+  text-align: center;
+  padding-top: 10%;
+  padding-top: 10vh;
+  /*position: absolute;*/
+  /*top: 40%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+}
+.header__title h1 {
+  color: #fff;
+  font-size: 36px;
+  font-size: 12vw;
+  font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-shadow: 0px 0px 15px #000;
+
+}
+.header__title p {
+  color: #fdcd3d;
+  font-size: 20px;
+  font-size: 4vw;
+  font-family: 'Roboto Condensed', 'Roboto', 'Open Sans', sans-serif; 
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 15px #000;
+}
+.header__see-more {
+  text-align: center;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.header__see-more a{
+  color: #fdcd3d;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.header__see-more a:hover{
+  color: #fdcd3d;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px #000;
+}
